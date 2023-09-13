@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento DOM</title>
+    <style>
+        #Principal{
+            background-color: greenyellow;
+            text-align: center;
+            padding: 100px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="Principal" onclick = "clicar()" onmouseenter = "entrou()" onmouseout = "saiu()">
+        Essa é a minha div
+    </div>
+    
+<script>
+    function clicar(){
+        Principal.style.background = 'green'
+        Principal.innerText = 'Clicou'
+        Principal.style.color = 'white'
+    }
+    function entrou() {
+        Principal.style.background = 'black'
+        Principal.style.color = 'white'
+        Principal.innerText = 'Entrou'
+    }
+    function saiu() {
+        Principal.style.background = 'pink'
+        Principal.style.color = 'black'
+        Principal.innerText = 'Saiu'
+    }
+</script>
+</body>
+</html>
